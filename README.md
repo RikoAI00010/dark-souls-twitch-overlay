@@ -23,16 +23,12 @@ The overlay connects anonymously to a Twitch channel using **tmi.js**, listens f
 ## 📥 Installation
 
 ### 1. Download the repository
-
 Click **Code → Download ZIP** on GitHub  
 Extract the files into any folder on your computer.
-
 ---
 
 ### 2. Set your Twitch channel
-
 Open `index.html` in **Notepad** or any text editor.
-
 Find this line:
 
 ```
@@ -41,7 +37,7 @@ const CHANNEL = "YA TWITCH HERE";
 Change it to your Twitch channel name.
 Save the file.
 
-3. Add the overlay to OBS
+### 3. Add the overlay to OBS
 Open OBS Studio
 Click + → Browser Source
 Enable Local File
@@ -50,7 +46,9 @@ Enable:
 Allow OBS to control audio
 Refresh browser when scene becomes active
 Click OK
+
 --------------------------------------
+
 Only the following roles can use the command:
 Broadcaster
 Moderator
@@ -61,7 +59,7 @@ The overlay will appear in the center of the screen and disappear automatically.
 Cooldown
 The command can be used once every 5 minutes globally to prevent spam.
 
-🎨 Customization
+### 🎨 Customization
 
 In index.html you can edit:
 Colors
@@ -71,9 +69,10 @@ Cooldown
 Sound file
 
 Cooldown line:
+```
 const COOLDOWN = 5 * 60 * 1000;
-
-⚔ Credits
+```
+### ⚔ Credits
 Inspired by the Dark Souls UI by FromSoftware.
 Powered by tmi.js.
 
